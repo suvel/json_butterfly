@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <Box>
         <Grid container spacing={2}>
-          <Grid item xs={4}>
+          <Grid item xs={6} maxHeight={'100vh'} overflow={'auto'}>
             <TextField
               id="outlined-textarea"
               label="Multiline Placeholder"
@@ -28,10 +28,11 @@ function App() {
               multiline
               value={json}
               onChange={(e) => setJson(e.target.value)}
+              fullWidth
             />
             <Button onClick={handelFormate}>Formate</Button>
           </Grid>
-          <Grid item xs={8}>
+          <Grid item xs={6} maxHeight={'100vh'} overflow={'auto'}>
             <ReactJson src={submittedJson} />
           </Grid>
         </Grid>
