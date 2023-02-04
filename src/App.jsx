@@ -23,8 +23,8 @@ function App() {
           <Grid item xs={6} maxHeight={'100vh'} overflow={'auto'}>
             <TextField
               id="outlined-textarea"
-              label="Multiline Placeholder"
-              placeholder="Placeholder"
+              label="Paste your json here to visualize"
+              placeholder={`{"name":"ramesh"}`}
               multiline
               value={json}
               onChange={(e) => setJson(e.target.value)}
